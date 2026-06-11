@@ -1,9 +1,9 @@
 # Digital Learning Passport (DLP) — Flutter prototype
 
-Proof-of-concept companion to the ICTAR paper *"An AI-Enabled Digital
-Learning Passport with Skill Gap Detection and Industry-Integrated
-Recruitment Interface"* and the Knovik × University of Vavuniya Edge AI
-proposal. See the [repository README](../README.md) for the full system
+Proof-of-concept companion to the ICTer 2026 paper *"An AI-Enabled
+Digital Learning Passport with Skill Gap Detection and
+Industry-Integrated Recruitment Interface"* (Industry R&D Track) and the
+Knovik × University of Vavuniya Edge AI proposal. See the [repository README](../README.md) for the full system
 overview, status, and roadmap.
 
 One Flutter codebase targeting Android, iOS, and web (the web build doubles

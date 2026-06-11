@@ -8,10 +8,11 @@ interface (IIDLP) for employers.
 This repository hosts the full research and engineering effort by
 **Knovik Private Limited, Sri Lanka**:
 
-- **ICTAR conference paper** (Track 8: AI-Enhanced Learning Materials &
-  Pedagogical Transformations) — Design Science Research treatment of the
-  DLP, demonstrated on the Open University Learning Analytics Dataset
-  (OULAD)
+- **ICTer 2026 conference paper** (Industry R&D Track,
+  [icter.lk](https://icter.lk/industry-rd-track/); submission due
+  June 14, 2026) — Design Science Research treatment of the DLP,
+  demonstrated on the Open University Learning Analytics Dataset (OULAD).
+  Springer LNCS format, max 6 pages, double-blind review
 - **Cross-platform prototype** (Flutter: Android, iOS, web) — the working
   proof of concept for both the student and recruiter experiences
 - **Hybrid Edge AI architecture** — the product direction for the
@@ -57,7 +58,7 @@ Three artifacts, mapped to the paper's research questions:
 | Path | Contents |
 |---|---|
 | [`dlp_app/`](dlp_app/) | Flutter prototype (student DLP + recruiter IIDLP + Edge LM). See its [README](dlp_app/README.md) for run instructions and architecture notes. |
-| [`paper/dlp-paper-ictar.md`](paper/dlp-paper-ictar.md) | Full ICTAR manuscript (5 authors, DSR methodology, OULAD demonstration). Pending items are marked `[PENDING]` and listed in the notes block at the top. |
+| [`paper/dlp-paper-icter.md`](paper/dlp-paper-icter.md) | Full ICTer 2026 manuscript (5 authors, DSR methodology, OULAD demonstration). Pending items are marked `[PENDING]` and listed in the notes block at the top, including the LNCS 6-page condensation and double-blind stripping required for submission. |
 | `pipeline/` *(planned)* | Python/pandas OULAD join pipeline: `studentInfo ⋈ studentAssessment ⋈ assessments`, `studentVle ⋈ vle` → per-student JSON profiles matching the app's `LearnerProfile` schema. Fills the paper's Section 5 results. |
 | `server/` *(planned)* | Campus edge server: FastAPI + Postgres (SSOT) + Chroma + Ollama serving open-source SLMs; Ed25519 passport signing. |
 
