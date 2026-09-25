@@ -1,3 +1,6 @@
 .claude
 /paper/
 .DS_Store
+
+# OULAD dataset (download via pipeline README; 433MB)
+pipeline/data/

@@ -1,0 +1,41 @@
+{
+  "id_student": 2415526,
+  "module": "CCC",
+  "presentation": "2014J",
+  "final_result": "Pass",
+  "vector": {
+    "Data analysis": 0.75,
+    "Programming": 0.2,
+    "Maths & statistics": 0.68,
+    "Communication": 0.6,
+    "Domain knowledge": 0.6,
+    "Engagement consistency": 0.88
+  },
+  "cosine_match": 0.958,
+  "gaps": [
+    {
+      "skill": "Programming",
+      "required": 0.55,
+      "actual": 0.2,
+      "severity_pts": 35
+    },
+    {
+      "skill": "Data analysis",
+      "required": 0.85,
+      "actual": 0.75,
+      "severity_pts": 10
+    },
+    {
+      "skill": "Maths & statistics",
+      "required": 0.75,
+      "actual": 0.68,
+      "severity_pts": 7
+    },
+    {
+      "skill": "Communication",
+      "required": 0.65,
+      "actual": 0.6,
+      "severity_pts": 5
+    }
+  ]
+}

@@ -1,8 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Model download (Edge LM) requires network access in all builds. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="dlp_app"
+        android:label="DL Passport"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -30,6 +33,12 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <!-- GPU delegate support for on-device LLM inference (flutter_gemma). -->
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false"/>
+        <uses-native-library android:name="libOpenCL-car.so" android:required="false"/>
+        <uses-native-library android:name="libOpenCL-pixel.so" android:required="false"/>
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

@@ -11,7 +11,7 @@ import 'dart:convert';
 
 import '../models/models.dart';
 
-const _demoSecret = 'knovik-dlp-poc-2026';
+const _demoSecret = 'knivok-dlp-poc-2026';
 
 class DecodedPassport {
   final LearnerProfile profile;

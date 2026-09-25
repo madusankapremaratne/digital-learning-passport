@@ -1,4 +1,4 @@
-package com.knovik.dlp_app
+package com.knivok.dlp_app
 
 import io.flutter.embedding.android.FlutterActivity
 

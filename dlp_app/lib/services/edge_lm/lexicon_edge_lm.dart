@@ -15,7 +15,7 @@ import 'edge_lm.dart';
 
 class LexiconEdgeLm implements EdgeLm {
   @override
-  String get modelName => 'Knovik Edge LM v1 (on-device, lexicon)';
+  String get modelName => 'Knivok Edge LM v1 (on-device, lexicon)';
 
   /// Competency lexicon: term → weight, per skill dimension. Multi-word
   /// terms are matched as phrases.

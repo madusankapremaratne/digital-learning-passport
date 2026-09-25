@@ -1,5 +1,5 @@
 name: dlp_app
-description: "A new Flutter project."
+description: "Digital Learning Passport — AI-enabled living learner profile with skill gap detection and recruiter-facing IIDLP."
 publish_to: 'none'
 version: 0.1.0+1
 
@@ -10,6 +10,7 @@ dependencies:
   fl_chart: ^1.2.0
   flutter:
     sdk: flutter
+  flutter_gemma: ^0.13.6
   google_fonts: ^8.1.0
   mobile_scanner: ^7.2.0
   qr_flutter: ^4.1.0
@@ -18,6 +19,20 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+
+flutter_launcher_icons:
+  image_path: "assets/icon/app_icon_squared.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  adaptive_icon_background: "#045FDA"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon_squared.png"
+    background_color: "#045FDA"
+    theme_color: "#045FDA"

@@ -14,6 +14,8 @@
 /// implementing this same interface — the UI and tests do not change.
 library;
 
+import 'package:flutter/foundation.dart';
+
 import '../../models/models.dart';
 import 'lexicon_edge_lm.dart';
 
@@ -47,5 +49,27 @@ abstract interface class EdgeLm {
   });
 }
 
+/// Holds the currently active engine. Defaults to the lexicon engine,
+/// which runs everywhere; the Edge model screen swaps in a real SLM
+/// (Gemma via flutter_gemma) once a model is downloaded and loaded.
+class EdgeLmRuntime extends ChangeNotifier {
+  EdgeLmRuntime._();
+
+  static final EdgeLmRuntime instance = EdgeLmRuntime._();
+
+  EdgeLm _active = LexiconEdgeLm();
+
+  EdgeLm get active => _active;
+
+  set active(EdgeLm engine) {
+    _active = engine;
+    notifyListeners();
+  }
+
+  bool get isSlmActive => _active is! LexiconEdgeLm;
+
+  void resetToLexicon() => active = LexiconEdgeLm();
+}
+
 /// The active on-device engine.
-final EdgeLm edgeLm = LexiconEdgeLm();
+EdgeLm get edgeLm => EdgeLmRuntime.instance.active;

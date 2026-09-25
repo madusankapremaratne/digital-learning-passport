@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../data/demo_data.dart';
+import '../services/edge_lm/edge_lm.dart';
+import 'edge_model_screen.dart';
 import 'recruiter/scan_screen.dart';
 import 'student/passport_screen.dart';
 
@@ -60,9 +62,26 @@ class HomeScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (_) => const ScanScreen()),
                   ),
                 ),
+                const SizedBox(height: 16),
+                ListenableBuilder(
+                  listenable: EdgeLmRuntime.instance,
+                  builder: (context, _) => Card(
+                    child: ListTile(
+                      leading: Icon(Icons.memory, color: scheme.primary),
+                      title: const Text('Edge AI model'),
+                      subtitle: Text(edgeLm.modelName),
+                      trailing: Icon(Icons.chevron_right,
+                          color: scheme.outline),
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (_) => const EdgeModelScreen()),
+                      ),
+                    ),
+                  ),
+                ),
                 const SizedBox(height: 32),
                 Text(
-                  'Knovik Private Limited — research prototype on the OULAD '
+                  'Knivok Private Limited — research prototype on the OULAD '
                   'schema (Kuzilek et al., 2017)',
                   textAlign: TextAlign.center,
                   style: Theme.of(context)

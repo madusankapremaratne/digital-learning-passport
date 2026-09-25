@@ -1,11 +1,11 @@
 {
-    "name": "dlp_app",
-    "short_name": "dlp_app",
+    "name": "Digital Learning Passport",
+    "short_name": "DL Passport",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#045FDA",
+    "theme_color": "#045FDA",
+    "description": "AI-enabled living learner profile with skill gap detection.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

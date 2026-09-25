@@ -1,0 +1,88 @@
+{
+  "coverage": {
+    "registrations_total": 32593,
+    "unique_students": 28785,
+    "with_assessment_data": 32593,
+    "with_vle_data": 29228,
+    "complete_profiles": 29228,
+    "coverage_pct": 89.7
+  },
+  "reference_vector": {
+    "Data analysis": 0.65,
+    "Programming": 0.6,
+    "Maths & statistics": 0.6,
+    "Communication": 0.717,
+    "Domain knowledge": 0.617,
+    "Engagement consistency": 0.6
+  },
+  "correlation": {
+    "pearson_r": -0.767,
+    "pearson_p": 0.0,
+    "spearman_rho": -0.786,
+    "spearman_p": 0.0,
+    "n": 29228,
+    "severity_by_outcome": {
+      "mean": {
+        "Distinction": 0.18,
+        "Fail": 1.375,
+        "Pass": 0.307,
+        "Withdrawn": 1.953
+      },
+      "std": {
+        "Distinction": 0.239,
+        "Fail": 0.761,
+        "Pass": 0.335,
+        "Withdrawn": 0.691
+      },
+      "count": {
+        "Distinction": 3024,
+        "Fail": 6678,
+        "Pass": 12358,
+        "Withdrawn": 7168
+      }
+    }
+  },
+  "classification": {
+    "definition": "at-risk = Fail or Withdrawn",
+    "split": "70/30 random (seed 42), threshold by F1 on train",
+    "threshold": 0.705,
+    "test_precision": 0.886,
+    "test_recall": 0.876,
+    "test_f1": 0.881,
+    "test_base_rate": 0.472,
+    "n_train": 20459,
+    "n_test": 8769
+  },
+  "worked_example": {
+    "id_student": 2697921,
+    "module": "FFF",
+    "presentation": "2014J",
+    "final_result_heldout": "Pass",
+    "skill_vector": {
+      "Data analysis": 0.84,
+      "Programming": 0.83,
+      "Maths & statistics": 0.5,
+      "Communication": 0.84,
+      "Domain knowledge": 0.84,
+      "Engagement consistency": 0.6
+    },
+    "target_role": "Data analyst",
+    "cosine_match": 0.964,
+    "top_gaps": [
+      {
+        "skill": "Maths & statistics",
+        "required": 0.75,
+        "actual": 0.5,
+        "severity_pts": 25,
+        "recommendation": "Revise inferential statistics; retake the FFF module practice TMAs."
+      },
+      {
+        "skill": "Data analysis",
+        "required": 0.85,
+        "actual": 0.84,
+        "severity_pts": 1,
+        "recommendation": "Complete the applied analytics project module and a SQL short course."
+      }
+    ]
+  }
+}
