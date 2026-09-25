@@ -58,7 +58,7 @@ Three artifacts, mapped to the paper's research questions:
 | Path | Contents |
 |---|---|
 | [`dlp_app/`](dlp_app/) | Flutter prototype (student DLP + recruiter IIDLP + Edge LM). See its [README](dlp_app/README.md) for run instructions and architecture notes. |
-| [`paper/dlp-paper-icter.md`](paper/dlp-paper-icter.md) | Full ICTer 2026 manuscript (5 authors, DSR methodology, OULAD demonstration). Pending items are marked `[PENDING]` and listed in the notes block at the top, including the LNCS 6-page condensation and double-blind stripping required for submission. |
+| [`paper/dlp-paper-icter.md`](paper/dlp-paper-icter.md) | Full ICTer 2026 manuscript (DSR methodology, OULAD demonstration). Pending items are marked `[PENDING]` and listed in the notes block at the top, including the LNCS 6-page condensation and double-blind stripping required for submission. |
 | [`pipeline/`](pipeline/) | Python/pandas OULAD pipeline: joins, skill-vector construction, and the paper's Section 5 evaluation (worked example, Pearson validation, at-risk precision/recall). Dataset CSVs are gitignored; download from the OULAD site into `pipeline/data/`. |
 | `server/` *(planned)* | Campus edge server: FastAPI + Postgres (SSOT) + Chroma + Ollama serving open-source SLMs; Ed25519 passport signing. |
 
@@ -111,7 +111,6 @@ and scan it with the recruiter flow on another device.
 | Madusanka Premaratne Rathnayake Mudiyanselage ✉ | Corresponding author; architecture, prototype, OULAD pipeline, gap engine |
 | Hasanthi Lakmali Thellapura Arachchilage | HR domain expertise, IIDLP design, recruiter process model |
 | Dimuthma Umashani | Paper structure, methodology, literature, editing |
-| Harini Madusha Naurunne Arachchilage | IIDLP gap analysis, real-world recruitment issue identification |
 | Dr. Dillina Herath (ESU) | Academic supervisor |
 
 Dataset: Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). *Open University
